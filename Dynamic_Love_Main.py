@@ -17,12 +17,9 @@ def dX_dt(X, t=0):
 
 X_f0 = np.array([ 0. , 0.])
 X_f1 = np.array([ 10. , 10.])
-def d2X_dt2(X, t=0):
-
-    return np.array([[a,   b     ],
-                  [c ,   d] ])
 
 
+                                                                                                                                                                                                                                                                                                                                                                                       
 
        
 
