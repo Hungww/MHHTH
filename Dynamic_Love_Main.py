@@ -22,12 +22,9 @@ def d2X_dt2(X, t=0):
     return np.array([[a,   b     ],
                   [c ,   d] ])
 
-A_f0 = d2X_dt2(X_f0) 
-#!python
-A_f1 = d2X_dt2(X_f0)                   
-lambda1, lambda2 = np.linalg.eigvals(A_f1) 
 
-T_f1 = 2*np.pi/abs(lambda1)       
+
+       
 
 t = np.linspace(0, 10,  1000)              # time
 X0 = np.array([5/4, 5/4])                     # initials conditions
@@ -73,7 +70,7 @@ values2=([-8,9],[-9,8],       [-2,3],[-3,2],
         #[-5,-10],[5,10],[2.5,10],[-10,-2.5],[-10,-5],[10,5]
  )
 values  = ([10,10])                      # position of X0 between X_f0 and X_f1
-vcolors = plt.cm.autumn_r(linspace(0.3, 1., len(values2))) 
+ 
 for v  in (values2 ):
    #(v*X_f1) 
     X0 =  v                              # starting point
